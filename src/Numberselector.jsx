@@ -2,7 +2,7 @@ import { useState } from "react";
 import './App.css';
 
 const NumberSelector = () => {
-  const [selectedNumber, setSelectedNumber] = useState(0);
+  const [selectedNumber, setSelectedNumber] = useState(50);
 
   // 数字が変更されたときの処理
   const handleNumberChange = (event) => {
@@ -17,6 +17,8 @@ const NumberSelector = () => {
         id="numberSelector"
         value={selectedNumber}
         onChange={handleNumberChange}
+        min="1"
+        max="100" 
       />
       <p>{selectedNumber}</p>
     </div>
