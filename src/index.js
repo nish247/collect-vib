@@ -8,7 +8,7 @@ import VibrationApp from './collectVib';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <VibrationApp />
+    <App />
   </React.StrictMode>
 );
 
